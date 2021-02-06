@@ -4,5 +4,13 @@
     "titleBar.inactiveForeground": "#000000CC",
     "titleBar.activeBackground": "#FFC600",
     "titleBar.inactiveBackground": "#FFC600CC"
-  }
+  },
+  "eslint.workingDirectories": [
+
+  ],
+  "eslint.codeAction.showDocumentation": {
+
+    "enable": true
+  },
+  "editor.suggest.insertMode": "replace"
 }
