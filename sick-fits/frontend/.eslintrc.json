@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "warn", //if there are prettier linting issues show them as errors
+        "no-unused-vars": "warn",  // make unused variables show as warnings as opposed to errors
+        "no-console": "off", // disable warnings for using console.log
+        "func-names":"off", // disable warnings for anonymous functions
+        "object-shorthand": "off", // disable forcing short-hand functions within objects
+        "spaced-comment": "warn", // make all comments enforce a space between notation
+        "class-methods-use-this": "off",
+        "react/react-in-jsx-scope": "off", //needed for next.js projects
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], // needed for next.js projects, should add ".ts" if typescript project
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading":"off",
+        "react/jsx-one-expression-per-line":"off"
+    }
+}
